@@ -11,7 +11,7 @@ Insights and recommendations are provided on the following key areas:
 * **Departmental Bottlenecks** (Referral Efficiency & Specialist Load)
 * **Patient Satisfaction Dynamics** (The Correlation Between Speed and Score)
 
-https://github.com/user-attachments/assets/7c0d76e4-fccd-4d57-94b5-d6705a09fae1
+https://github.com/user-attachments/assets/495d1833-94d2-4ae7-a017-9814e31f06d4
 
 **PowerQuery M Code regarding data preparation process ovarious tables f can be found [[here]](https://github.com/mehedibhai101/Hospital_Emergency_Room_Analytics/tree/main/Data%20Cleaning).**
 
@@ -40,6 +40,8 @@ The ER analytics engine is built on a single, high-fidelity transaction table co
 
 King's County ER manages a substantial volume of **9,216 patients**, with a **50% Admission Rate**. The analysis uncovered a severe operational failure: **59.3% of patients missed the target wait time**, with the average wait clocking in at **35.3 minutes**. While the **Average Satisfaction Score is 4.99/10**, this metric is heavily suppressed by the "Target Missed" segment. The data pinpoints **General Practice (1,840 referrals)** and **Orthopedics (995 referrals)** as the highest-volume intake channels, suggesting that the ER is being used as a primary care substitute, clogging the system for critical cases.
 
+<img width="1027" height="727" alt="Image" src="https://github.com/user-attachments/assets/8344ded0-cf86-4f59-a887-5090d97073d6" />
+
 ---
 
 # 🔍 Insights Deep Dive
@@ -50,15 +52,11 @@ King's County ER manages a substantial volume of **9,216 patients**, with a **50
 * **The 35-Minute Threshold.** The average wait time is **35.3 minutes**. While seemingly short, in an ER context, consistent delays of this magnitude for critical cases can be fatal.
 * **Volume vs. Compliance.** There is a direct correlation between peak intake hours and target failure, confirming that current staffing levels are static and do not flex with demand surges.
 
-[**Visualization: Target Status Distribution (Missed vs. Met) Donut Chart**]
-
 ### 🧭 Patient Flow & Demographics
 
 * **The Primary Care Substitute.** The single largest age group is **19-40 years old (2,624 patients)**, followed closely by **41-60 (2,284)**. This "working age" dominance suggests many are using the ER for non-emergency issues due to a lack of after-hours primary care.
 * **Gender Parity.** The split is nearly even (Male 51.1%, Female 48.7%), indicating that marketing or operational changes will affect the entire population equally.
 * **Racial Diversity.** The patient base is diverse, with **White (2,571)** and **African American (1,951)** populations forming the core, requiring culturally competent triage protocols.
-
-[**Visualization: Patient Age Group & Race Distribution Bar Charts**]
 
 ### ⚙ Departmental Bottlenecks
 
@@ -66,15 +64,11 @@ King's County ER manages a substantial volume of **9,216 patients**, with a **50
 * **Orthopedics Strain.** **Orthopedics** handles **995 referrals**, a high volume likely driven by accidental injuries.
 * **Specialist Efficiency.** **Physiotherapy** and **Neurology** show slightly higher average wait times (>36 mins), indicating a potential shortage of on-call specialists for these specific consults.
 
-[**Visualization: Referrals by Department Treemap**]
-
 ### ⭐ Patient Satisfaction Dynamics
 
 * **The "Middle-of-the-Road" Score.** The average satisfaction score sits at **4.99/10**. This is a "neutral" score, indicating that while clinical care is likely adequate, the *process* (wait times, intake) is dragging down the overall experience.
 * **The Wait Time Tax.** Analysis suggests a strong inverse relationship: as wait times exceed the 35-minute average, satisfaction scores degrade rapidly.
 * **Admission Perception.** Patients who are **Admitted (50%)** generally report higher satisfaction than those discharged, likely due to the validation of their condition and more attentive care.
-
-[**Visualization: Average Satisfaction Score vs. Wait Time Trend**]
 
 ---
 
