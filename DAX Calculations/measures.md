@@ -9,41 +9,41 @@ This documentation provides the complete catalog of all DAX measures used in the
 * **Total Patients**: Total count of unique patient visits.
 
     * **Formula**: `COUNT(data[Patient Id])`
-    * **Format**: `0`
+    * **Format**: `#,0`
 
 * **Referred Patients**: Count of patients referred by a specific department.
   
   * **Formula**: `CALCULATE([Total Patients], data[Department]<>"None" && data[Department]<>"")`
-  * **Format**: `0`
+  * **Format**: `#,0`
 
 * **Non-Referred**: Patients who arrived without a specific internal referral.
 
   * **Formula**: `[Total Patients]-[Referred Patients]`
-  * **Format**: `0`
+  * **Format**: `#,0`
 
-* **Avg Waittime (days)**: Average time (in days or converted minutes) a patient waited.
+* **Avg Waittime (minutes)**: Average time a patient waited.
 
   * **Formula**: `AVERAGE(data[Wait Time])`
-  * **Format**: `General`
+  * **Format**: `0.00 min`
 
 * **Avg Satisfaction Score**: Average patient feedback score (1-10).
 
   * **Formula**: `AVERAGE(data[Satisfaction Score])`
-  * **Format**: `General`
+  * **Format**: `0.00`
 
 ---
 
-## 👥 Demographics (Tornado Chart)
+## 👥 Demographics
 
 * **Male Axis**: Count of male patients (Positive Axis).
 
   * **Formula**: `1 * CALCULATE([Total Patients], data[Gender]="♂")`
-  * **Format**: `0`
+  * **Format**: `#,0`
 
 * **Female Axis**: Count of female patients (Negative Axis).
 
   * **Formula**: `-1 * CALCULATE([Total Patients], data[Gender]="♀")`
-  * **Format**: `0`
+  * **Format**: `#,0`
 
 * **M%**: Formatted label for Male percentage.
 
