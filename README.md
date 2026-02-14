@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/495d1833-94d2-4ae7-a017-9814e31f06d4
 
 **DAX queries regarding various analytical calculations can be found [[here]](https://github.com/mehedibhai101/Hospital_Emergency_Room_Analytics/tree/main/DAX%20Calculations).**
 
-**An interactive Power BI dashboard used to report and explore sales trends can be found [[here]](https://app.powerbi.com/view?r=eyJrIjoiNTlmYTMxOWQtNmI4My00NzIwLWE4MjgtZjhjMzExY2U3MzQzIiwidCI6IjAwMGY1Mjk5LWU2YTUtNDYxNi1hNTI4LWJjZTNlNGUyYjk4ZCIsImMiOjEwfQ%3D%3D).**
+**An interactive Power BI dashboard used to report and explore analysis can be found [[here]](https://app.powerbi.com/view?r=eyJrIjoiNTlmYTMxOWQtNmI4My00NzIwLWE4MjgtZjhjMzExY2U3MzQzIiwidCI6IjAwMGY1Mjk5LWU2YTUtNDYxNi1hNTI4LWJjZTNlNGUyYjk4ZCIsImMiOjEwfQ%3D%3D).**
 
 ---
 
